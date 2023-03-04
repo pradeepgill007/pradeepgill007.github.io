@@ -1,1 +1,1 @@
-# Praktikum.github.io
+# Praktikum.com
