@@ -1,75 +1,77 @@
-
-
-// Contact 
+// Contact
 .contact {
-	border-radius: $border-radius-lg;
-	box-shadow: 1px 2px 6px rgba($gray-500,.5);
-	padding: 30px;
-	max-width: 1000px;
-	margin: 0 auto;
-	background: $white;
+  border-radius: $border-radius-lg;
+  box-shadow: 1px 2px 6px rgba($gray-500, 0.5);
+  padding: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: $white;
 
-	.form {
-		flex-grow: 1;
-		border-right: 1px solid $border-color;
-		padding: 35px 30px 35px 0;
+  .form {
+    flex-grow: 1;
+    border-right: 1px solid $border-color;
+    padding: 35px 30px 35px 0;
 
-		form {
-			margin-top: 30px;
-		}
-	}
+    form {
+      margin-top: 30px;
+    }
+  }
 
-	.contact-infos {
-		display: flex;
-		justify-content: space-around;
+  .contact-infos {
+    display: flex;
+    justify-content: space-around;
 
-		.item {
-			@include d-flex;
-			flex-wrap: wrap;
+    .item {
+      @include d-flex;
+      flex-wrap: wrap;
 
-			i {
-				display: block;
-				width: 40px;
-				font-size: 16px;
-				color: primary;
-				@include circle(37);
-				border: 1px solid $primary;
-				line-height: 34px;
-				text-align: center;
-				padding: 0 !important;
-				color: $primary;
-				margin-right: 15px;
-			}
+      i {
+        display: block;
+        width: 40px;
+        font-size: 16px;
+        color: primary;
+        @include circle(37);
+        border: 1px solid $primary;
+        line-height: 34px;
+        text-align: center;
+        padding: 0 !important;
+        color: $primary;
+        margin-right: 15px;
+      }
 
-			div {
-				flex-grow: 1;
+      div {
+        flex-grow: 1;
 
-				h5 {
-					margin-bottom: 10px;
-					opacity: .9;
-				}
+        h5 {
+          margin-bottom: 10px;
+          opacity: 0.9;
+        }
 
-				p {
-					opacity: .7;
-					font-size: 15px;
-					margin-bottom: 4px;
-				}
-			}
-		}
-	}
+        p {
+          opacity: 0.7;
+          font-size: 15px;
+          margin-bottom: 4px;
+        }
+      }
+    }
+  }
 
-	@include media-breakpoint-down(md) {
-		flex-direction: column;
-		padding: 20px;
+  @include media-breakpoint-down(md) {
+    flex-direction: column;
+    padding: 20px;
 
-		.form {
-			margin: 0 0 20px 0;
-			padding: 0;
-			border-right: 0;
-		}
+    .form {
+      margin: 0 0 20px 0;
+      padding: 0;
+      border-right: 0;
+    }
 
-		.contact-infos {
-			display: none;
-		}
-	}
+    .contact-infos {
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      .item:first-child {
+        margin-bottom: 16px;
+      }
+    }
+  }
 }
