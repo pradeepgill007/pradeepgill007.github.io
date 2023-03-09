@@ -1,1 +1,1 @@
-# Praktikum.com
+# MeraPraktikum.com
