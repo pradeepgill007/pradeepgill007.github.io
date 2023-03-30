@@ -14,6 +14,12 @@
 
 // smooth scroll
 $(document).ready(function(){
+	let windowWidth = window.innerWidth
+
+	let topMargin = 0
+	if(windowWidth < 991){
+		topMargin = 50
+	}
 	$(".nav-link").on('click', function(event) {
 
     	if (this.hash !== "") {
@@ -21,16 +27,19 @@ $(document).ready(function(){
 			event.preventDefault();
 
 			var hash = this.hash;
-
 			$('html, body').animate({
-				scrollTop: $(hash).offset().top
+				scrollTop: $(hash).offset().top - topMargin
 			}, 700, function(){
-				window.location.hash = hash;
+				//window.location.hash = hash;
 			});
       	} 
     });
 
 	$('.navbar-toggler').click(function(){
 		$("#navbarSupportedContent").toggleClass("show");
-	})
+	});
+
+	$('.navbar-nav .nav-item').click(function(){
+		$("#navbarSupportedContent").toggleClass("show");
+	});
 });
