@@ -34,13 +34,14 @@
       }
     }
 
-    .img-holder {
+    .banner-img-holder {
       height: 100%;
       align-self: flex-end;
       flex-grow: 1;
       @include d-flex;
       align-items: flex-end;
       padding-left: 0px;
+      position: relative;
 
       img {
         width: 100%;
@@ -60,7 +61,7 @@
           font-size: 54px;
         }
       }
-      .img-holder {
+      .banner-img-holder {
         img {
           margin-right: 0;
         }

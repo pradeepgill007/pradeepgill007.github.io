@@ -7398,7 +7398,7 @@ pre {
       .header .container .infos .btn {
         display: inline-block;
         margin: 0 2px; }
-    .header .container .img-holder {
+    .header .container .banner-img-holder {
       height: 100%;
       align-self: flex-end;
       flex-grow: 1;
@@ -7408,8 +7408,9 @@ pre {
       display: -webkit-flex;
       display: flex;
       align-items: flex-end;
-      padding-left: 0px; }
-      .header .container .img-holder img {
+      padding-left: 0px;
+      position: relative; }
+      .header .container .banner-img-holder img {
         width: 100%;
         max-width: 620px;
         filter: drop-shadow(0 -4px 20px rgba(206, 212, 218, 0.4));
@@ -7422,7 +7423,7 @@ pre {
           margin-top: 0; }
           .header .container .infos .title {
             font-size: 54px; }
-        .header .container .img-holder img {
+        .header .container .banner-img-holder img {
           margin-right: 0; } }
   .header .widget {
     position: relative;
@@ -7511,3 +7512,32 @@ pre {
     margin-top: 0.5rem !important; }
   .ourBackBone .img-thumbnail {
     max-width: 70%; } }
+
+.eyesWrapper {
+  width: 96px;
+  height: 20px;
+  position: absolute;
+  top: 248px;
+  right: 169px;
+  z-index: 1; }
+
+.eye {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10%;
+  transition: transform 0.2s ease-in-out; }
+
+.eye-right {
+  right: 0; }
+
+.eye-retina {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  transform: translate(-50%, -50%); }

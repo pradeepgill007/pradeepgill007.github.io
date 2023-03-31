@@ -1,0 +1,33 @@
+.eyesWrapper {
+  width: 96px;
+  height: 20px;
+  position: absolute;
+  top: 248px;
+  right: 169px;
+  z-index: 1;
+  //border: 2px solid red;
+}
+
+.eye {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10%;
+  transition: transform 0.2s ease-in-out;
+}
+
+.eye-right {
+  right: 0;
+}
+
+.eye-retina {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
