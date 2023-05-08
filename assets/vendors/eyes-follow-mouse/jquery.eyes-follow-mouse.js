@@ -1,8 +1,10 @@
 //Eyes
 const retina = $(".eye-retina");
 const button = $(".eyesWrapper");
-console.log("button ==>", button)
-$(document).mousemove((e) => {
+let windowWidth = window.innerWidth;
+
+function mouseMove(){
+   $(document).mousemove((e) => {
     e = e || window.event;
 
     //Offset of button from document
@@ -34,4 +36,10 @@ $(document).mousemove((e) => {
         f.style.left = `${left > 45 && left < 55 ? 50 : left}%`;
         f.style.top = `${top > 45 && top < 55 ? 50 : top}%`;
     });
-});
+}); 
+}
+
+if(windowWidth > 991){
+    mouseMove()
+}
+
