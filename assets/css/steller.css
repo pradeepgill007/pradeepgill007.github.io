@@ -7496,6 +7496,10 @@ pre {
   @media (max-width: 991.98px) {
     .section {
       padding: 2rem 0 0; } }
+  .section .qrCode {
+    text-align: center; }
+    .section .qrCode img {
+      width: 150px; }
 
 @media (max-width: 991.98px) {
   .serviceSection p.mb-5,
